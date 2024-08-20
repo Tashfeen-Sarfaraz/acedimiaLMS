@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a8b6559499.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+        .sidebar {
+            text-align: center;
+            justify-content: center;
+            border: 3px solid whitesmoke;
+            width: 230px;
+            height: 350%;
+            position: absolute;
+            left: -10px;
+            top: 115px;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: black;
+
+        }
+
+        .nav-link {
+            color: white;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .navbar-brand {
+            color: white;
+            font-size: 26px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        #course {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        #career {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        #pathways {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        #Assesments {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        #Chapter {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        #communication {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        #chap1 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 140px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap2 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 180px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap3 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 220px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap4 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 260px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap5 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 300px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap6 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 340px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap7 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 380px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap8 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 420px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap9 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 460px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap10 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 500px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #Poetry {
+            text-align: center;
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 800px;
+            top: 540px;
+            font-size: 32px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: purple;
+
+        }
+
+        #chap11 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 590px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap12 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 630px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap13 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 670px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap14 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 710px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap15 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 750px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap16 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 790px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap17 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 830px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap18 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 870px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap19 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 910px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap20 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 950px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap21 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 990px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #Novel {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 800px;
+            top: 1135px;
+            font-size: 32px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: purple;
+
+        }
+
+        #p1 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1180px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: purple;
+        }
+
+        #chap22 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1220px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap23 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1260px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap24 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1300px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap25 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1340px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap26 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1380px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap27 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1420px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap28 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1460px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap29 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1500px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap30 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1540px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap31 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1580px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap32 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1620px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap33 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1660px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap34 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1700px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap35 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1740px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap36 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1780px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap37 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1820px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap38 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1860px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap39 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1900px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap40 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1940px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap41 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1980px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap42 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 2020px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <a id="course" href="Courses.html">Courses</a><br>
+        <br>
+        <br>
+        <a id="career" href="Career.html">Career Guidance</a><br>
+        <br>
+        <br>
+        <a id="pathways" href="Pathways.html">Learning Pathways</a><br>
+        <br>
+        <br>
+        <a id="Assesments" href="Assignments.html">Assignments/Assesments</a><br>
+        <br>
+        <br>
+        <a id="Chapter" href="Chapter.html">Chapter Progress</a><br>
+        <br>
+        <br>
+        <a id="communication" href="Communication.html">Communication Hub</a>
+
+    </div>
+
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Academiacrpro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="nav justify-content-center">
+                    <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                    <a class="nav-link" href="Student Dashboard.html">Student Dashboard</a>
+                    <a class="nav-link" href="Advisor Dashboard.html">Advisor Dashboard</a>
+                    <a class="nav-link" href="Parent Dashboard.html">Parent Dashboard</a>
+                    <a class="nav-link" href="settings.html">Settings</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <a id="chap1" href=""><i class="fa-solid fa-chalkboard"></i> 1. TWENTY MINUTES WITH MRS.OAKENTUBB </a>
+    <a id="chap2" href=""><i class="fa-solid fa-chalkboard"></i> 2. REFLECTIONS ON THE RE-AWAKENING EAST </a>
+    <a id="chap3" href=""><i class="fa-solid fa-chalkboard"></i> 3. THE DAY THE DAME BROKE </a>
+    <a id="chap4" href=""><i class="fa-solid fa-chalkboard"></i> 4. PAKISTAN AND THE MODERN WORLD </a>
+    <a id="chap5" href=""><i class="fa-solid fa-chalkboard"></i> 5. ACT III OF THE SILVER BOX </a>
+    <a id="chap6" href=""><i class="fa-solid fa-chalkboard"></i> 6. THE WORLD AS I SEE IT </a>
+    <a id="chap7" href=""><i class="fa-solid fa-chalkboard"></i> 7. THE DEVOTED FRIEND </a>
+    <a id="chap8" href=""><i class="fa-solid fa-chalkboard"></i> 8. SPACE SHIP ONE</a>
+    <a id="chap9" href=""><i class="fa-solid fa-chalkboard"></i> 9. AN ASTRONOMER’S VIEW OF THE UNIVERSE </a>
+    <a id="chap10" href=""><i class="fa-solid fa-chalkboard"></i> 10. LIFE IN THE UNIVERSE </a>
+
+    <h1 id="Poetry">Poetry</h1>
+
+    <a id="chap11" href=""><i class="fa-solid fa-chalkboard"></i> 1. THE SEVEN AGES OF MAN </a>
+    <a id="chap12" href=""><i class="fa-solid fa-chalkboard"></i> 2. The man of life upright </a>
+    <a id="chap13" href=""><i class="fa-solid fa-chalkboard"></i> 3. LINES FROM SAMSON AGONISTES </a>
+    <a id="chap14" href=""><i class="fa-solid fa-chalkboard"></i> 4. ELEGY </a>
+    <a id="chap15" href=""><i class="fa-solid fa-chalkboard"></i> 5. THE SOLITARY REAPER </a>
+    <a id="chap16" href=""><i class="fa-solid fa-chalkboard"></i> 6. MUSIC WHEN SOFT VOICES DIEUNDER THE GREEN WOOD TREE
+    </a>
+    <a id="chap17" href=""><i class="fa-solid fa-chalkboard"></i> 7. LINES FROM ENDYMION </a>
+    <a id="chap18" href=""><i class="fa-solid fa-chalkboard"></i> 8. SAY NOT THE STRUGGLE NAUGHT AVAILETH </a>
+    <a id="chap19" href=""><i class="fa-solid fa-chalkboard"></i> 9. LINES FROM ULYSSES</a>
+    <a id="chap20" href=""><i class="fa-solid fa-chalkboard"></i> 10. THE LOST STAR </a>
+    <a id="chap21" href=""><i class="fa-solid fa-chalkboard"></i> 11. LINES FROM “AN ESSAY ON MAN” </a>
+
+    <h1 id="Novel">Novel</h1>
+    <p id="p1">The Prisoner of Zenda</p>
+
+    <a id="chap22" href=""><i class="fa-solid fa-chalkboard"></i> 1. THE RASSENDYLL WITH A WORD ON THE ELPHBERG </a>
+    <a id="chap23" href=""><i class="fa-solid fa-chalkboard"></i> 2. CONCERNING THE COLOUR OF MEN’S </a>
+    <a id="chap24" href=""><i class="fa-solid fa-chalkboard"></i> 3. A MERRY EVENING WITH A DISTANT RELATIVE </a>
+    <a id="chap25" href=""><i class="fa-solid fa-chalkboard"></i> 4. THE KING KEEPS HIS APPOINTMENT </a>
+    <a id="chap26" href=""><i class="fa-solid fa-chalkboard"></i> 5. ADVENTURE OF AN UNDERSTUDY </a>
+    <a id="chap27" href=""><i class="fa-solid fa-chalkboard"></i> 6. HIS MAJESTY SLEEPS IN STRELSAU </a>
+    <a id="chap28" href=""><i class="fa-solid fa-chalkboard"></i> 7. A FAIR COUSIN AND A DARK BROTHER </a>
+    <a id="chap29" href=""><i class="fa-solid fa-chalkboard"></i> 8. A NEW USE FOR A TEA TABLE </a>
+    <a id="chap30" href=""><i class="fa-solid fa-chalkboard"></i> 9. A GREAT CHANCE FOR A VILLAIN </a>
+    <a id="chap31" href=""><i class="fa-solid fa-chalkboard"></i> 10. HUNTING A VERY BIG BOAR </a>
+    <a id="chap32" href=""><i class="fa-solid fa-chalkboard"></i> 11. I RECEIVE A VISITOR AND BAIT A HOOK </a>
+    <a id="chap33" href=""><i class="fa-solid fa-chalkboard"></i> 12. AN IMPROVEMENT ON JACOB’S LADDER </a>
+    <a id="chap34" href=""><i class="fa-solid fa-chalkboard"></i> 13. A NIGHT OUTSIDE THE CASTLE </a>
+    <a id="chap35" href=""><i class="fa-solid fa-chalkboard"></i> 14. I TALK WITH A TEMPTER </a>
+    <a id="chap36" href=""><i class="fa-solid fa-chalkboard"></i> 15. A DESPERATE PLAN </a>
+    <a id="chap37" href=""><i class="fa-solid fa-chalkboard"></i> 16. YOUNG RUPERT’S MIDNIGHT DIVERSIONS </a>
+    <a id="chap38" href=""><i class="fa-solid fa-chalkboard"></i> 17. THE FORCING OF THE TRAP </a>
+    <a id="chap39" href=""><i class="fa-solid fa-chalkboard"></i> 18. FACE TO FACE IN THE FOREST </a>
+    <a id="chap40" href=""><i class="fa-solid fa-chalkboard"></i> 19. THE PRISONER AND THE KING </a>
+    <a id="chap41" href=""><i class="fa-solid fa-chalkboard"></i> 20. IF LOVE WERE ALL </a>
+    <a id="chap42" href=""><i class="fa-solid fa-chalkboard"></i> 21. PRESENT, PAST AND FUTURE </a>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
