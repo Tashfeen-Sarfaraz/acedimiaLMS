@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a8b6559499.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+        .sidebar {
+            text-align: center;
+            justify-content: center;
+            border: 3px solid whitesmoke;
+            width: 230px;
+            height: 420%;
+            position: absolute;
+            left: -10px;
+            top: 115px;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: black;
+
+        }
+
+        .nav-link {
+            color: white;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .navbar-brand {
+            color: white;
+            font-size: 26px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        #course {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        #career {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        #pathways {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        #Assesments {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        #Chapter {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        #communication {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        #p1 {
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            right: 80px;
+            top: 140px;
+            text-decoration: none;
+            color: purple;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 32px;
+        }
+
+
+        #chap1 {
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            right: 100px;
+            top: 180px;
+            text-decoration: none;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        #chap2 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 220px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap3 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 260px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap4 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 300px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap5 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 340px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap6 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 380px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #p2 {
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            right: 80px;
+            top: 420px;
+            text-decoration: none;
+            color: purple;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 32px;
+
+        }
+
+        #chap7 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 470px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap8 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 510px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap9 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 550px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #p3 {
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            right: 80px;
+            top: 590px;
+            text-decoration: none;
+            color: purple;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 32px;
+
+
+        }
+
+        #chap10 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 640px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap11 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 680px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #p4 {
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            right: 80px;
+            top: 720px;
+            text-decoration: none;
+            color: purple;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 32px;
+
+
+        }
+
+        #chap12 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 760px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap13 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 800px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #p5 {
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            right: 80px;
+            top: 840px;
+            text-decoration: none;
+            color: purple;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 32px;
+
+
+        }
+
+        #chap14 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 880px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap15 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 920px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap16 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 960px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #p6 {
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            right: 80px;
+            top: 1000px;
+            text-decoration: none;
+            color: purple;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 32px;
+
+
+        }
+
+        #chap17 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 1040px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap18 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 1080px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap19 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 1120px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #p7 {
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            right: 80px;
+            top: 1160px;
+            text-decoration: none;
+            color: purple;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 32px;
+
+
+        }
+
+        #chap20 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 1200px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap21 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 1240px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #p8 {
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            right: 80px;
+            top: 1280px;
+            text-decoration: none;
+            color: purple;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 32px;
+
+
+        }
+
+        #chap22 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 1320px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap23 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 1360px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap24 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 1400px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap25 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 1440px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap26 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 1480px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap27 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 1520px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #p9 {
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            right: 80px;
+            top: 1560px;
+            text-decoration: none;
+            color: purple;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 32px;
+
+
+        }
+
+        #chap28 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 1600px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap29 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 1640px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #p10 {
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            right: 80px;
+            top: 1680px;
+            text-decoration: none;
+            color: purple;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 32px;
+
+        }
+
+        #chap30 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 1720px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap31 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 1760px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #p11 {
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            right: 80px;
+            top: 1790px;
+            text-decoration: none;
+            color: purple;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 32px;
+
+        }
+
+        #chap32 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 1840px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #p12 {
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            right: 80px;
+            top: 1880px;
+            text-decoration: none;
+            color: purple;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 32px;
+
+        }
+
+        #chap33 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 1920px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #p13 {
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            right: 80px;
+            top: 1960px;
+            text-decoration: none;
+            color: purple;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 32px;
+
+        }
+
+        #chap34 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 2000px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap35 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 2040px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #p14 {
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            right: 80px;
+            top: 2080px;
+            text-decoration: none;
+            color: purple;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 32px;
+
+        }
+
+        #chap36 {
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            right: 100px;
+            top: 2120px;
+            text-decoration: none;
+            color: royalblue;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        #chap37 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 2160px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap38 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 2200px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap39 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 2240px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap40 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 2280px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap41 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 2320px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap42 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 2360px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap43 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 2400px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap44 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 2440px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap45 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            right: 100px;
+            top: 2480px;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <a id="course" href="Courses.html">Courses</a><br>
+        <br>
+        <br>
+        <a id="career" href="Career.html">Career Guidance</a><br>
+        <br>
+        <br>
+        <a id="pathways" href="Pathways.html">Learning Pathways</a><br>
+        <br>
+        <br>
+        <a id="Assesments" href="Assignments.html">Assignments/Assesments</a><br>
+        <br>
+        <br>
+        <a id="Chapter" href="Chapter.html">Chapter Progress</a><br>
+        <br>
+        <br>
+        <a id="communication" href="Communication.html">Communication Hub</a>
+
+    </div>
+
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Academiacrpro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="nav justify-content-center">
+                    <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                    <a class="nav-link" href="Student Dashboard.html">Student Dashboard</a>
+                    <a class="nav-link" href="Advisor Dashboard.html">Advisor Dashboard</a>
+                    <a class="nav-link" href="Parent Dashboard.html">Parent Dashboard</a>
+                    <a class="nav-link" href="settings.html">Settings</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <p id="p1"> حصہ نثر </p>
+    <a id="chap1" href=""> قومی اتفاق <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap2" href=""> زبان گویا <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap3" href=""> فاقے میں روزہ <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap4" href=""> پٹرولیم کی کہانی <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap5" href=""> کچھ ذریعہ تعلیم کے باب میں <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap6" href=""> سندھی شاعری کے تراجم <i class="fa-solid fa-chalkboard"></i> </a>
+
+    <p id="p2"> افسانے </p>
+    <a id="chap7" href=""> زیور کا ڈیا <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap8" href=""> بابا نور <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap9" href=""> آب حیات <i class="fa-solid fa-chalkboard"></i> </a>
+
+    <p id="p3"> ڈرامے </p>
+    <a id="chap10" href=""> میدان جنگ <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap11" href=""> بیگم کی بلی <i class="fa-solid fa-chalkboard"></i> </a>
+
+    <p id="p4"> سفرنامے </p>
+    <a id="chap12" href=""> تھر کی نادیہ کمانچی <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap13" href=""> ملکہ بلقیس کا محل <i class="fa-solid fa-chalkboard"></i> </a>
+
+    <p id="p5"> نثری مزاح </p>
+    <a id="chap14" href=""> خواہ مخواہ کی لڑائی <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap15" href=""> مجبوریاں <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap16" href=""> ایک انار و صد بیمار <i class="fa-solid fa-chalkboard"></i> </a>
+
+    <p id="p6"> مکتوبات </p>
+    <a id="chap17" href=""> به نام میر مہدی مجروح <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap18" href=""> خان محمد نیازالدین کے نام <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap19" href=""> به نام صدیق جاوید <i class="fa-solid fa-chalkboard"></i> </a>
+
+    <p id="p7"> نظم حصہ </p>
+    <a id="chap20" href=""> حمد <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap21" href=""> نعت <i class="fa-solid fa-chalkboard"></i> </a>
+
+    <p id="p8"> پابند نظمیں </p>
+    <a id="chap22" href=""> رہے نام اللہ کا <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap23" href=""> داستان تیاری میں باغ کی (مثنوی) <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap24" href=""> یارب ! چمن نظم کو ۔۔۔ (مرثیہ) <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap25" href=""> چپ کی داد <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap26" href=""> مردِ مسلماں <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap27" href=""> نوائے سروش <i class="fa-solid fa-chalkboard"></i> </a>
+
+    <p id="p9"> رباعیات </p>
+    <a id="chap28" href=""> مير انيس <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap29" href=""> جوش <i class="fa-solid fa-chalkboard"></i> </a>
+
+    <p id="p10"> قطعات </p>
+    <a id="chap30" href=""> تن به تقدیر <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap31" href=""> مہک <i class="fa-solid fa-chalkboard"></i> </a>
+
+    <p id="p11"> شعری مزاح </p>
+    <a id="chap32" href=""> سائیڈ افیکٹس <i class="fa-solid fa-chalkboard"></i> </a>
+
+    <p id="p12"> قومی نغمه </p>
+    <a id="chap33" href=""> چاند میری زمیں <i class="fa-solid fa-chalkboard"></i> </a>
+
+    <p id="p13"> آزاد نظم </p>
+    <a id="chap34" href=""> استغاثه <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap35" href=""> مشوره <i class="fa-solid fa-chalkboard"></i> </a>
+
+    <p id="p14"> غزلیات </p>
+    <a id="chap36" href=""> غزلیات <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap37" href=""> غزلیات <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap38" href=""> غزلیات <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap39" href=""> غزلیات <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap40" href=""> غزل <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap41" href="">غزل <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap42" href="">غزل <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap43" href="">غزل <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap44" href="">غزل <i class="fa-solid fa-chalkboard"></i> </a>
+    <a id="chap45" href=""> پیام لطیف (وائی) <i class="fa-solid fa-chalkboard"></i> </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
