@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a8b6559499.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+        .sidebar {
+            text-align: center;
+            justify-content: center;
+            border: 3px solid whitesmoke;
+            width: 230px;
+            height: 460%;
+            position: absolute;
+            left: -10px;
+            top: 115px;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: black;
+
+        }
+
+        .nav-link {
+            color: white;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .navbar-brand {
+            color: white;
+            font-size: 26px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        #course {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        #career {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        #pathways {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        #Assesments {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        #Chapter {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        #communication {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        #chap1 {
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            left: 300px;
+            top: 140px;
+            text-decoration: none;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        #chap2 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 180px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap3 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 220px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap4 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 260px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap5 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 300px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap6 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 340px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap7 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 380px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap8 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 420px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap9 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 460px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap10 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 500px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap11 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 540px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap12 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 580px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #Practical {
+            text-align: center;
+            justify-content: center;
+            position: relative;
+            left: 100px;
+            top: 660px;
+            font-size: 32px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: purple;
+        }
+
+        #Section1 {
+            text-align: center;
+            justify-content: center;
+            position: relative;
+            left: -170px;
+            top: 700px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: purple;
+        }
+
+        #prac1 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 860px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        #Section2 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: relative;
+            left: -170px;
+            top: 740px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: purple;
+        }
+
+        #prac2 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: relative;
+            left: 300px;
+            top: 740px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+
+        }
+
+        #Section3 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: relative;
+            left: -190px;
+            top: 760px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: purple;
+
+        }
+
+        #prac3 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: relative;
+            left: 300px;
+            top: 760px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        #Section4 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: relative;
+            left: -200px;
+            top: 780px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: purple;
+
+        }
+
+        #prac4 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: relative;
+            left: 300px;
+            top: 780px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #prac5 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: relative;
+            left: -220px;
+            top: 820px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        #prac6 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1250px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+
+
+        }
+
+        #prac7 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1290px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        #prac8 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1330px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #prac9 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1370px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        #prac10 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1410px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+
+        }
+
+        #prac11 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1450px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        #prac12 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1490px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+
+        }
+
+        #prac13 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1530px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        #Section5 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: relative;
+            left: -213px;
+            top: 1160px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: purple;
+
+
+        }
+
+        #prac14 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1630px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        #Section6 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: relative;
+            left: -180px;
+            top: 1210px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: purple;
+
+        }
+
+        #prac15 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1730px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+
+        }
+
+        #prac16 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1770px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        #prac17 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1810px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+
+        }
+
+        #prac18 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1850px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        #prac19 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1890px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+
+        }
+
+        #prac20 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1930px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        #prac21 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1970px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+
+        }
+
+        #prac22 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 2010px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        #prac23 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 2050px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+
+        }
+
+        #prac24 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 2090px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        #prac25 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 2130px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+
+        }
+
+        #prac26 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 2170px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        #prac27 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 2210px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+
+        }
+
+        #prac28 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 2250px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        #prac29 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 2290px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+
+        }
+
+        #Section7 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: relative;
+            left: -180px;
+            top: 1820px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: purple;
+
+        }
+
+        #prac30 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 2390px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        #Section8 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: relative;
+            left: -233px;
+            top: 1860px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: purple;
+
+        }
+
+        #prac31 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 2480px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+
+        }
+
+        #Section9 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: relative;
+            left: -180px;
+            top: 1900px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: purple;
+
+        }
+
+        #prac32 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 2580px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        #prac33 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 2620px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <a id="course" href="Courses.html">Courses</a><br>
+        <br>
+        <br>
+        <a id="career" href="Career.html">Career Guidance</a><br>
+        <br>
+        <br>
+        <a id="pathways" href="Pathways.html">Learning Pathways</a><br>
+        <br>
+        <br>
+        <a id="Assesments" href="Assignments.html">Assignments/Assesments</a><br>
+        <br>
+        <br>
+        <a id="Chapter" href="Chapter.html">Chapter Progress</a><br>
+        <br>
+        <br>
+        <a id="communication" href="Communication.html">Communication Hub</a>
+
+    </div>
+
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Academiacrpro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="nav justify-content-center">
+                    <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                    <a class="nav-link" href="Student Dashboard.html">Student Dashboard</a>
+                    <a class="nav-link" href="Advisor Dashboard.html">Advisor Dashboard</a>
+                    <a class="nav-link" href="Parent Dashboard.html">Parent Dashboard</a>
+                    <a class="nav-link" href="settings.html">Settings</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <a id="chap1" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 1: Stoichiometry </a>
+    <a id="chap2" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 2: Atomic Structure </a>
+    <a id="chap3" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 3: Theories of Covalent Bonding and Shapes </a>
+    <a id="chap4" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 4: States of Matter I: Gas </a>
+    <a id="chap5" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 5: State of Matter II: Liquids </a>
+    <a id="chap6" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 6: State of Matter III: Solids </a>
+    <a id="chap7" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 7: Chemical Equilibrium </a>
+    <a id="chap8" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 8: Acids, Bases and Salts </a>
+    <a id="chap9" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 9: Chemical Kinetics </a>
+    <a id="chap10" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 10: Solutions and Colloids </a>
+    <a id="chap11" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 11: Thermochemistry </a>
+    <a id="chap12" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 12: Electrochemistry </a>
+
+    <h1 id="Practical">Practical Section of Class 11 and 12</h1>
+    <p id="Section1">1.1: States of Matter II: Liquids</p>
+    <a id="prac1" href=""><i class="fa-solid fa-chalkboard"></i> 1.1.1: Separate the Given Mixture of Inks by Paper
+        Chromatography </a>
+    <p id="Section2">1.2: States of Matter III: Solids</p>
+    <a id="prac2" href=""><i class="fa-solid fa-chalkboard"></i> 1.2.1: Crystallize Benzoic Acid from water </a>
+    <p id="Section3">1.3: Chemical Equilibrium</p>
+    <a id="prac3" href=""><i class="fa-solid fa-chalkboard"></i> 1.3.1: Purify sample of NaCl by passing HCl Gas </a>
+    <p id="Section4">1.4: Acid, Bases and Salts</p>
+    <a id="prac4" href=""><i class="fa-solid fa-chalkboard"></i> 1.4.1: Determine the Percentage of NaOH volumetrically
+    </a>
+    <a id="prac5" href=""><i class="fa-solid fa-chalkboard"></i> 1.4.2: Determine the Value of X by Volumetric Method
+    </a>
+    <a id="prac6" href=""><i class="fa-solid fa-chalkboard"></i> 1.4.3: Determine the Solubility of Oxalic Acid </a>
+    <a id="prac7" href=""><i class="fa-solid fa-chalkboard"></i> 1.4.4: Standardize KMnO4 Solution and Calculate the
+        Volume </a>
+    <a id="prac8" href=""><i class="fa-solid fa-chalkboard"></i> 1.4.5: Determine Amount of Iron in Given Sample
+        Volumetrically </a>
+    <a id="prac9" href=""><i class="fa-solid fa-chalkboard"></i> 1.4.6: Determine the Percentage Composition
+        Volumetrically </a>
+    <a id="prac10" href=""><i class="fa-solid fa-chalkboard"></i> 1.4.7: Determine the Solubility of Mohr's Salt </a>
+    <a id="prac11" href=""><i class="fa-solid fa-chalkboard"></i> 1.4.8: Standardize the Given Solution of Iodine </a>
+    <a id="prac12" href=""><i class="fa-solid fa-chalkboard"></i> 1.4.9: Calculate the Atomic weight of the Metal M
+        volumetrically </a>
+    <a id="prac13" href=""><i class="fa-solid fa-chalkboard"></i> 1.4.10: Calculate percentage Purity of given Sample of
+        N2S2O3 </a>
+    <p id="Section5">1.5: Thermochemistry</p>
+    <a id="prac14" href=""><i class="fa-solid fa-chalkboard"></i> 1.5.1: Determine the Heat of Neutralization of NaOH
+        and
+        HCl </a>
+    <p id="Section6">1.6: s- and p- Block Elements</p>
+    <a id="prac15" href=""><i class="fa-solid fa-chalkboard"></i> 1.6.1: Detection of Dilute Acid Group Radicals </a>
+    <a id="prac16" href=""><i class="fa-solid fa-chalkboard"></i> 1.6.2: Detection of Dilute Acid Group Radicals
+        (continued) </a>
+    <a id="prac17" href=""><i class="fa-solid fa-chalkboard"></i> 1.6.3: Detection of Concentrated Acid Group Radicals
+    </a>
+    <a id="prac18" href=""><i class="fa-solid fa-chalkboard"></i> 1.6.4: Detection of Concentrated Acid Group Radicals
+        (continued) </a>
+    <a id="prac19" href=""><i class="fa-solid fa-chalkboard"></i> 1.6.5: Detection of Special Group Radicals </a>
+    <a id="prac20" href=""><i class="fa-solid fa-chalkboard"></i> 1.6.6: Detection of Basic Radicals: Colored Salts </a>
+    <a id="prac21" href=""><i class="fa-solid fa-chalkboard"></i> 1.6.7: Detection of Basic Radicals: Colored Salts
+        (continued) </a>
+    <a id="prac22" href=""><i class="fa-solid fa-chalkboard"></i> 1.6.8: Detection of Basic Radicals Group-I </a>
+    <a id="prac23" href=""><i class="fa-solid fa-chalkboard"></i> 1.6.9: Detection of Basic Radicals (NH4+) </a>
+    <a id="prac24" href=""><i class="fa-solid fa-chalkboard"></i> 1.6.10: Detection of Basic Radicals: Flame Test </a>
+    <a id="prac25" href=""><i class="fa-solid fa-chalkboard"></i> 1.6.11: Detection of Basic Radicals: Flame Test
+        (continued) </a>
+    <a id="prac26" href=""><i class="fa-solid fa-chalkboard"></i> 1.6.12: Detection of Basic Radicals: Filter Ash Test
+    </a>
+    <a id="prac27" href=""><i class="fa-solid fa-chalkboard"></i> 1.6.13: Detection of Basic Radicals: Filter Ash Test
+        (continued) </a>
+    <a id="prac28" href=""><i class="fa-solid fa-chalkboard"></i> 1.6.14: Perform Tests for the Following Gases: NH3,
+        CO2, H2 </a>
+    <a id="prac29" href=""><i class="fa-solid fa-chalkboard"></i> 1.6.15: Perform Tests for the Following Gases: O2 ,
+        SO2, Cl2 </a>
+    <p id="Section7">1.7: d- and f- Block Elements</p>
+    <a id="prac30" href=""><i class="fa-solid fa-chalkboard"></i> 1.7.1: Prepare Nickel Dimethylglyoxime </a>
+    <p id="Section8">1.8: Hydrocarbons</p>
+    <a id="prac31" href=""><i class="fa-solid fa-chalkboard"></i> 1.8.1: Prepare Ethylene from Ethylene Bromide </a>
+    <p id="Section9">1.9: Some more experiments</p>
+    <a id="prac32" href=""><i class="fa-solid fa-chalkboard"></i> 1.9.1: Preparation of Potash Alum </a>
+    <a id="prac33" href=""><i class="fa-solid fa-chalkboard"></i> 1.9.2: Preparation of Aspirin </a>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
