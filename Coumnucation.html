@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Communication Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom theme colors */
+        :root {
+            --primary-color: #4f46e5; /* Indigo */
+            --secondary-color: #818cf8; /* Light Indigo */
+            --background-color: #f3f4f6; /* Cool Gray */
+            --text-color: #1f2937; /* Gray-900 */
+        }
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+        .primary-bg {
+            background-color: var(--primary-color);
+        }
+        .secondary-bg {
+            background-color: var(--secondary-color);
+        }
+        .primary-text {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body class="p-6">
+    <div class="max-w-6xl mx-auto bg-white p-6 shadow-md rounded-lg">
+        <h1 class="text-2xl font-bold mb-6">Communication Hub</h1>
+        
+        <!-- Section: Send a Message -->
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Send a Message</h2>
+            <form id="messageForm" class="bg-gray-50 p-4 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <label for="recipient" class="block text-sm font-medium mb-1">Select Recipient</label>
+                    <select id="recipient" class="w-full p-2 border border-gray-300 rounded-md">
+                        <option value="general">General Chat</option>
+                        <option value="john_doe">John Doe</option>
+                        <option value="jane_smith">Jane Smith</option>
+                        <!-- Add more recipients as needed -->
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="messageContent" class="block text-sm font-medium mb-1">Message</label>
+                    <textarea id="messageContent" rows="4" class="w-full p-2 border border-gray-300 rounded-md" placeholder="Type your message here..."></textarea>
+                </div>
+                <button type="button" onclick="sendMessage()" class="primary-bg text-white px-4 py-2 rounded-md hover:bg-indigo-700">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Section: Message Feed -->
+        <div>
+            <h2 class="text-xl font-semibold mb-4">Message Feed</h2>
+            <div id="messageFeed" class="bg-gray-50 p-4 rounded-lg shadow-md h-64 overflow-y-auto space-y-4">
+                <!-- Example messages -->
+                <div class="p-4 bg-white rounded-lg shadow-sm">
+                    <div class="flex justify-between">
+                        <span class="font-medium primary-text">John Doe</span>
+                        <span class="text-sm text-gray-500">2 hours ago</span>
+                    </div>
+                    <p class="text-gray-700 mt-2">Does anyone need help with the last assignment?</p>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-sm">
+                    <div class="flex justify-between">
+                        <span class="font-medium primary-text">Jane Smith</span>
+                        <span class="text-sm text-gray-500">1 hour ago</span>
+                    </div>
+                    <p class="text-gray-700 mt-2">I'm available to study together if anyone's interested!</p>
+                </div>
+                <!-- More messages will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript function to send a message (demo purpose)
+        function sendMessage() {
+            const recipient = document.getElementById('recipient').value;
+            const messageContent = document.getElementById('messageContent').value;
+
+            if (messageContent.trim() !== '') {
+                // Optionally, you can implement the code to send the message to the server here
+                // Example: sendMessageToServer(recipient, messageContent);
+                alert(`Message sent to ${recipient}!`);
+                document.getElementById('messageForm').reset();
+                
+                // For demo, we add the message to the feed
+                const messageFeed = document.getElementById('messageFeed');
+                const newMessage = document.createElement('div');
+                newMessage.className = 'p-4 bg-white rounded-lg shadow-sm';
+                newMessage.innerHTML = `
+                    <div class="flex justify-between">
+                        <span class="font-medium primary-text">You</span>
+                        <span class="text-sm text-gray-500">Just now</span>
+                    </div>
+                    <p class="text-gray-700 mt-2">${messageContent}</p>
+                `;
+                messageFeed.appendChild(newMessage);
+                messageFeed.scrollTop = messageFeed.scrollHeight;
+            }
+        }
+    </script>
+</body>
+</html>
