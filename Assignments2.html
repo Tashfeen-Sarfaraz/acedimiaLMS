@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Assignments and Assessments</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-5xl mx-auto bg-white p-6 shadow-md rounded-lg">
+        <h1 class="text-2xl font-bold mb-6">Assignments and Assessments</h1>
+        
+        <!-- Section: Submit Assignment -->
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Submit Your Assignment</h2>
+            <form id="assignmentForm" class="bg-gray-50 p-4 rounded-lg shadow-md" enctype="multipart/form-data">
+                <div class="mb-4">
+                    <label for="assignmentFile" class="block text-sm font-medium text-gray-700 mb-1">Upload Assignment (PDF, DOCX, PPT, etc.)</label>
+                    <input type="file" id="assignmentFile" class="w-full p-2 border border-gray-300 rounded-md" accept=".pdf,.doc,.docx,.ppt,.pptx" required>
+                </div>
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Submit Assignment</button>
+            </form>
+        </div>
+
+        <!-- Section: View Feedback -->
+        <div>
+            <h2 class="text-xl font-semibold mb-4">Your Assignment Feedback</h2>
+            <div id="feedbackSection" class="bg-gray-50 p-4 rounded-lg shadow-md">
+                <!-- Example Feedback Entry -->
+                <div class="mb-4">
+                    <h3 class="text-lg font-medium">Assignment 1: Introduction to AI</h3>
+                    <p class="text-gray-700">Grade: A</p>
+                    <p class="text-gray-700">Feedback: Excellent understanding of AI concepts. Great job on the practical examples!</p>
+                </div>
+                <!-- Additional feedback entries can be dynamically loaded from the database -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to handle form submission
+        document.getElementById('assignmentForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const fileInput = document.getElementById('assignmentFile');
+            const file = fileInput.files[0];
+
+            if (file) {
+                // Optionally, you can implement the code to send the file to the server here.
+                // Example: uploadAssignment(file);
+                alert('Assignment submitted successfully!'); // For demo purposes
+            }
+        });
+    </script>
+</body>
+</html>
