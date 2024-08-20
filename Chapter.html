@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Chapter Mastery and Progress</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for progress bars */
+        .progress-bar {
+            height: 20px;
+            background-color: #e2e8f0;
+            border-radius: 9999px;
+            overflow: hidden;
+        }
+        .progress-bar-fill {
+            height: 100%;
+            background-color: #3b82f6;
+            text-align: right;
+            padding-right: 10px;
+            color: white;
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 p-6">
+    <div class="max-w-5xl mx-auto bg-white p-6 shadow-md rounded-lg">
+        <h1 class="text-2xl font-bold mb-6">Chapter Mastery and Progress</h1>
+        
+        <!-- Section: Track Progress -->
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Your Progress Overview</h2>
+            <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+                <!-- Example Progress Bar for a Course -->
+                <div class="mb-6">
+                    <h3 class="text-lg font-medium">Course: Introduction to Machine Learning</h3>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width: 70%;">70%</div>
+                    </div>
+                    <p class="text-gray-600 mt-2">You have completed 7 out of 10 chapters.</p>
+                </div>
+                <!-- Additional progress bars can be dynamically loaded from the database -->
+                <div class="mb-6">
+                    <h3 class="text-lg font-medium">Course: Advanced Data Structures</h3>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width: 50%;">50%</div>
+                    </div>
+                    <p class="text-gray-600 mt-2">You have completed 5 out of 10 chapters.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-lg font-medium">Course: Cybersecurity Fundamentals</h3>
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" style="width: 30%;">30%</div>
+                    </div>
+                    <p class="text-gray-600 mt-2">You have completed 3 out of 10 chapters.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section: Learning Phases -->
+        <div>
+            <h2 class="text-xl font-semibold mb-4">Your Learning Phases</h2>
+            <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+                <!-- Example Learning Phase -->
+                <div class="mb-6">
+                    <h3 class="text-lg font-medium">Phase 1: Basics and Fundamentals</h3>
+                    <p class="text-gray-700">You have mastered the basics. Keep it up as you move to more advanced topics!</p>
+                </div>
+                <!-- Additional phases can be dynamically loaded from the database -->
+                <div class="mb-6">
+                    <h3 class="text-lg font-medium">Phase 2: Intermediate Challenges</h3>
+                    <p class="text-gray-700">You're making great progress. Continue pushing through these challenges.</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-lg font-medium">Phase 3: Advanced Applications</h3>
+                    <p class="text-gray-700">You're nearing the finish line. Apply your knowledge to complex problems.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript can be added here to dynamically load progress and phases from your database
+    </script>
+</body>
+</html>
