@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a8b6559499.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+
+        .sidebar {
+            text-align: center;
+            justify-content: center;
+            border: 3px solid whitesmoke;
+            width: 230px;
+            height: 285%;
+            position: absolute;
+            left: -10px;
+            top: 115px;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: black;
+
+        }
+
+        .nav-link {
+            color: white;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .navbar-brand {
+            color: white;
+            font-size: 26px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        #course {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        #career {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        #pathways {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        #Assesments {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        #Chapter {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+        }
+
+        #communication {
+            font-size: 19px;
+            font-family: 'Times New Roman', Times, serif;
+            color: white;
+            text-decoration: none;
+
+        }
+
+        #chap1 {
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+            left: 300px;
+            top: 140px;
+            text-decoration: none;
+            color: black;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        #chap2 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 180px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap3 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 220px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap4 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 260px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap5 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 300px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap6 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 340px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap7 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 380px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap8 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 420px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap9 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 460px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap10 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 500px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap11 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 540px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap12 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 580px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #chap13 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 620px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #chap14 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 660px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #Practical {
+            text-align: center;
+            justify-content: center;
+            position: relative;
+            left: 100px;
+            top: 660px;
+            font-size: 32px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: purple;
+        }
+
+        #Section1 {
+            text-align: center;
+            justify-content: center;
+            position: relative;
+            left: -170px;
+            top: 700px;
+            font-size: 25px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: purple;
+        }
+
+        #prac1 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 880px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #prac2 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 920px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #prac3 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 960px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #prac4 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1000px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #prac5 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1040px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #prac6 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1080px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #prac7 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1120px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #prac8 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1160px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #prac9 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1200px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #prac10 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1240px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #prac11 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1280px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #prac12 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1320px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #prac13 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1360px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #prac14 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1400px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #prac15 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1440px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #prac16 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1480px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #prac17 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1520px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #prac18 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1560px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #prac19 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1600px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+
+        #prac20 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1640px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: royalblue;
+        }
+
+        #prac21 {
+            text-align: center;
+            justify-content: center;
+            text-decoration: none;
+            position: absolute;
+            left: 300px;
+            top: 1680px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <a id="course" href="Courses.html">Courses</a><br>
+        <br>
+        <br>
+        <a id="career" href="Career.html">Career Guidance</a><br>
+        <br>
+        <br>
+        <a id="pathways" href="Pathways.html">Learning Pathways</a><br>
+        <br>
+        <br>
+        <a id="Assesments" href="Assignments.html">Assignments/Assesments</a><br>
+        <br>
+        <br>
+        <a id="Chapter" href="Chapter.html">Chapter Progress</a><br>
+        <br>
+        <br>
+        <a id="communication" href="Communication.html">Communication Hub</a>
+
+    </div>
+
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Academiacrpro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="nav justify-content-center">
+                    <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                    <a class="nav-link" href="Student Dashboard.html">Student Dashboard</a>
+                    <a class="nav-link" href="Advisor Dashboard.html">Advisor Dashboard</a>
+                    <a class="nav-link" href="Parent Dashboard.html">Parent Dashboard</a>
+                    <a class="nav-link" href="settings.html">Settings</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <a id="chap1" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 1: Measurement </a>
+    <a id="chap2" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 2: Kinematics </a>
+    <a id="chap3" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 3: Dynamics </a>
+    <a id="chap4" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 4: Rotational </a>
+    <a id="chap5" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 5: Work and Energy </a>
+    <a id="chap6" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 6: Fluid Statics </a>
+    <a id="chap7" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 7: Fluid Dynamics </a>
+    <a id="chap8" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 8: Electric Fields </a>
+    <a id="chap9" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 9: Capacitors </a>
+    <a id="chap10" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 10: DC Circuits </a>
+    <a id="chap11" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 11: Oscillation </a>
+    <a id="chap12" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 12: Acoustics </a>
+    <a id="chap13" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 13: Physical Optics </a>
+    <a id="chap14" href=""><i class="fa-solid fa-chalkboard"></i> Chapter 14: Communication </a>
+
+    <h1 id="Practical">Practical Section</h1>
+    <p id="Section1">Chapter 1: Physical Quantities</p>
+    <a id="prac1" href=""><i class="fa-solid fa-chalkboard"></i> 1. Measure volume of cylinder with vernier callipers
+    </a>
+    <a id="prac2" href=""><i class="fa-solid fa-chalkboard"></i> 2. Find capacity of glass tube by using vernier
+        calipers </a>
+    <a id="prac3" href=""><i class="fa-solid fa-chalkboard"></i> 3. Measure thickness of a strip or a wire with screw
+        gauge </a>
+    <a id="prac4" href=""><i class="fa-solid fa-chalkboard"></i> 4. Find the value of g by free fall method </a>
+    <a id="prac5" href=""><i class="fa-solid fa-chalkboard"></i> 5. Effect of length of pendulum on time period and find
+        g </a>
+    <a id="prac6" href=""><i class="fa-solid fa-chalkboard"></i> 6. study relation between time and length of simple
+        pendulum </a>
+    <a id="prac7" href=""><i class="fa-solid fa-chalkboard"></i> 7. Prove that period of pendulum is independent of
+        amplitude </a>
+    <a id="prac8" href=""><i class="fa-solid fa-chalkboard"></i> 8. Prove that period of pendulum is independent of mass
+    </a>
+    <a id="prac9" href=""><i class="fa-solid fa-chalkboard"></i> 9. Find water surface tension value by scale and needle
+    </a>
+    <a id="prac10" href=""><i class="fa-solid fa-chalkboard"></i> 10. Find the young's modulus of wire by searle
+        apparatus </a>
+    <a id="prac11" href=""><i class="fa-solid fa-chalkboard"></i> 11. Determination of frequency of A.C. by electric
+        sonometer </a>
+    <a id="prac12" href=""><i class="fa-solid fa-chalkboard"></i> 12. Study law of length of vibrating strings by
+        sonometer </a>
+    <a id="prac13" href=""><i class="fa-solid fa-chalkboard"></i> 13. Study law of tension of vibrating strings by
+        sonometer </a>
+    <a id="prac14" href=""><i class="fa-solid fa-chalkboard"></i> 14. Study law of mass of vibrating strings by
+        sonometer
+    </a>
+    <a id="prac15" href=""><i class="fa-solid fa-chalkboard"></i> 15. find velocity of sound using 2 resonance position
+    </a>
+    <a id="prac16" href=""><i class="fa-solid fa-chalkboard"></i> 16. Determine critical angle of glass using prism </a>
+    <a id="prac17" href=""><i class="fa-solid fa-chalkboard"></i> 17. Find refractive index of water by concave mirror
+    </a>
+    <a id="prac18" href=""><i class="fa-solid fa-chalkboard"></i> 18. Find wavelength of sodium light by Newton's rings
+    </a>
+    <a id="prac19" href=""><i class="fa-solid fa-chalkboard"></i> 19. To set up a microscope </a>
+    <a id="prac20" href=""><i class="fa-solid fa-chalkboard"></i> 20. Find pressure coefficient of air at constant
+        volume
+    </a>
+    <a id="prac21" href=""><i class="fa-solid fa-chalkboard"></i> 21. Find resistance of a galvanometer by Kelvin's
+        method </a>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
